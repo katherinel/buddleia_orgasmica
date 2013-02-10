@@ -8,15 +8,16 @@ class Bud {
   // cylinder
   byte cRadius = 6; 
   byte cHeight = 40; 
-  byte stemLength = 120;
+  float stemLength = 80.0;
 
   Bud(PVector gridPos, PVector gridDim) {
     stemDegrees = 360.0/gridDim.y;
     levelHeight = gridPos.x * 60;
     levelRotation = 18.0 * gridPos.x; //figure out how to integrate this
+    stemLength = stemLength + (gridPos.x *7);
   }
 
-  void draw() {
+  void draw(int r, int g, int b) {
     noStroke();
     
     translate(width/2, height/4, 0);
@@ -32,7 +33,7 @@ class Bud {
     box(60, 20, 20);
     
     
-    fill(175, 0, 178);
+    fill(r, g, b);
     translate(0, stemLength, 0);
     cylinder(cRadius * 2, cHeight, 10);
     

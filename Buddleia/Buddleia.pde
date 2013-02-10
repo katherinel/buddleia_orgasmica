@@ -20,7 +20,7 @@ void draw() {
   
   for(byte x=0; x < rows; x++) {
     for (byte y=0; y < cols; y++) {
-      Buddleia[x][y].draw();
+      Buddleia[x][y].draw(175, 0, 178); 
     }
   }
 }
