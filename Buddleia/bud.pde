@@ -12,7 +12,7 @@ class Bud {
 
   Bud(PVector gridPos, PVector gridDim) {
     stemDegrees = 360.0/gridDim.y;
-    levelHeight = gridPos.x * 60;
+    levelHeight = gridPos.x * 30;
     levelRotation = 18.0 * gridPos.x; //figure out how to integrate this
     stemLength = stemLength + (gridPos.x *7);
   }

@@ -1,4 +1,4 @@
-byte rows = 10;
+byte rows = 20;
 byte cols = 6;
 Bud[][] Buddleia = new Bud[rows][cols];
 
